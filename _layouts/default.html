@@ -27,7 +27,11 @@ layout: compress
 </head>
 <body>
 
+    {% if page.layout == "post" %}
+    <div class="wrapper-large">
+    {% else %}
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+    {% endif %}
         {% if page.tag %}
             <div class="post">
         {% else %}
