@@ -1,4 +1,10 @@
 <div class="social-links">
+    {% if site.weixin %}
+        <a class="link" data-title="weixin.bar" href="assets/weixin.html" target="_blank">
+            <svg class="icon icon-weixin"><use xlink:href="#icon-weixin"></use></svg>
+        </a>
+    {% endif %}
+
     {% if site.facebook %}
         <a class="link" data-title="facebook.com/{{ site.facebook }}" href="http://facebook.com/{{ site.facebook }}" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
